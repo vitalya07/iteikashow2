@@ -1,0 +1,99 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1002;
+    transition: all .4s ease;
+    &__dialog {
+        max-width: 450px;
+        margin: 150px auto;
+        transition: all .5s ease;
+    }
+    &__content {
+        width: 100%;
+        padding: 36px;
+        background-color: $whiteColor;
+        border-radius: 20px;
+        position: relative;
+        .modal__close {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -50px;
+            left: 90%;
+            cursor: pointer;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 2px;
+                background-color: $whiteColor;
+                transform: translate(-50%, -50%) rotate(45deg) ;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 20px;
+                height: 2px;
+                background-color: $whiteColor;
+                transform:  translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+       
+    }
+    &__header {
+        &-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            color: $darkColor;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+    &__form {
+        width: 100%;
+    }
+    &__label {
+        width: 100%;
+        margin-bottom: 18px;
+        display: block;
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        height: 50px;
+        border-radius: 20px;
+        padding: 0 30px;
+        border: 1px solid $orangeColor;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: $orangeColor;
+        margin-bottom: 30px;
+        &::placeholder {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: $orangeColor;
+        }
+        &:focus {
+            outline: 1px solid $orangeColor;
+        }
+    }
+    &__btn {
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+}

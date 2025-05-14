@@ -1,0 +1,32 @@
+.photo {
+    padding: 100px 0 0 0;
+}
+.swiper-button-prev {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    background: #cb7d26;
+    border-radius: 50%;
+    font-size: 21px;
+}
+.swiper-button-next {
+    color: #fff;
+    width: 70px;
+    height: 70px;
+    background: #cb7d26;
+    border-radius: 50%;
+    font-size: 21px;
+}
+.swiper-pagination-custom {
+    bottom: -300px;
+}
+.swiper-pagination-bullet {
+    background: $darkColor; 
+    width: 12px;
+    height: 12px;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: $orangeColor;
+}

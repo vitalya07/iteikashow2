@@ -1,0 +1,123 @@
+.services {
+    padding: 100px 0;
+    &__title {
+        font-family: 'Big Noodle Titling', sans-serif;
+        font-size: 55px;
+        line-height: 120%;
+        color: $darkColor;
+        position: relative;
+        width: 300px;
+        margin-bottom: 30px;
+        &::after {
+            position: absolute;
+            content: '';
+            width: 195px;
+            height: 5px;
+            background-color: $orangeColor;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        gap: 50px;
+        margin-bottom: 150px;
+        &-box {
+            &--left {
+                max-width: 780px;
+            }
+        }
+        &-img {
+            max-width: 590px;
+            height: auto;
+            &__second {
+                position: relative;
+            }
+            img {
+                border-radius: 20px;
+            }
+        }
+        &-title {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            margin-bottom: 30px;
+            max-width: 465px;
+            width: 100%;
+            color: $darkColor;
+            margin-bottom: 30px;
+        }
+        &-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            margin-bottom: 30px; 
+            font-size: 22px;
+            span {
+                font-weight: 700;
+            }           
+        }
+        &-descr {
+            margin-bottom: 30px;
+            font-size: 22px;
+            line-height: 120%;
+            color: $orangeColor;
+            font-style: italic;
+            font-weight: 600;
+        }
+        &-el {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            gap: 100px;
+            margin-bottom: 25px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            line-height: 120%;
+            font-size: 22px;
+        }
+        &-price {
+            font-weight: 700;
+        }
+    }
+    &__one {
+        position: relative;
+    }
+    &__bg {
+        position: absolute;
+        top: 50%;
+        left: -190px;
+        transform: translateY(-50%);
+        z-index: -1;
+        &-second {
+           position: absolute;
+            top: 50%;
+            left: 420px;
+            transform: translateY(-50%);
+            z-index: -1;
+            width: 50%;
+        }
+    }
+    &__second {
+        align-items: center;
+    }
+    &__four {
+        align-items: center;
+        margin-bottom: 0;
+    }
+    &__main-game {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 22px;
+        color: $darkColor;
+        &--title {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        &--item {
+            margin-bottom: 15px;
+        }
+    }
+}
