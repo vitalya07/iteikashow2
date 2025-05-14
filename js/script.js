@@ -38,32 +38,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
         },
     });
 
-     const videoSwiper = new Swiper('.slide-video', {
-        direction: 'horizontal',
-        loop: true,
-        slidesPerView: 3,
-        spaceBetween: 80,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-         breakpoints: {
-            280: {
-                slidesPerView: 1,         
-            },
-            580: {
-                slidesPerView: 2,
-                spaceBetween: 30, 
-            },
-            993: {
-                slidesPerView: 3,
-            },
-            1920: {
-                slidesPerView: 4, 
-            },
-        },
-    });
-
     const feedbackSwiper = new Swiper('.slide-feedback', {
         direction: 'horizontal',
         loop: true,
@@ -101,14 +75,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const showModal =()=> {
         modal.classList.remove('hide');
         modal.classList.add('show');
-        document.body.style.overflow = 'hiden'
+        document.body.style.overflow = 'hidden'
     }
     const hideModal = ()=> {
         modal.classList.remove('show');
         modal.classList.add('hide');
-        document.body.style.overflow = 'hiden'
+        document.body.style.overflow = ''
     }
-    dataModal.forEach(item => item.addEventListener('click', showModal));
+    dataModal.forEach(item => item.addEventListener('click', ()=>{
+        modalTitle.textContent = 'Заказать звонок'
+        showModal()} ));
     dataPresents.addEventListener('click', ()=> {
         modalTitle.textContent = 'Заказать сертификат'
         showModal();

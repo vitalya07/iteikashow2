@@ -578,6 +578,17 @@
         &__title {
             font-size: 30px;
         }
+        &__left {
+            &-descr {
+                font-size: 16px;
+            }
+            &-title {
+                font-size: 16px;
+            }            
+        }
+        &__list {
+            font-size: 16px;
+        }
     }
     .video {
         &__title {
