@@ -268,6 +268,9 @@
                 font-size: 14px;
                 gap: 10px;
             }
+            &-price {
+                text-align: right;
+            }
         }
         &__bg {
             left: -110px;
@@ -372,6 +375,8 @@
     .footer {
         &__list {
             flex-direction: column;
+            justify-content: start;
+            align-items: start;
             &-link {
                 font-size: 20px;
             }
@@ -534,7 +539,7 @@
             }
             &-price {
                 align-self: end;
-                max-width: 70px;
+                max-width: 72px;
             }
            
         }
